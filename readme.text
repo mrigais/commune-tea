@@ -1,0 +1,7 @@
+//npm init to initialise the npm package manager
+//npm i express@latest
+//
+
+//in websockets
+//even server can send request to the persistently connected clients
+//unlike http where only clients send request 
