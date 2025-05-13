@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        CHATAPP
+    </head>
+    <body>This is a two way communication
+
+        <form id="message-form">
+            <input id="input" name="message" type="text" placeholder="message" />
+            <button id="submit" type="submit">send</button>
+        </form>
+        <button id="share-location">Share location</button>
+        <script src="/socket.io/socket.io.js"></script>
+        <!-- //client side socket library requirement
+        //genrated by the server we're using
+        //lets us use the library in our js code -->
+        <script src="js/chat.js"></script>
+    </body>
+</html>
