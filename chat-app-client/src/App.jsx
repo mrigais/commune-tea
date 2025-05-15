@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ChatApp from './components/ChatApp'
+import React, { useCallback, useState } from 'react';
+import JoinForm from './components/JoinChat';
+import ChatApp from './components/ChatApp';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    const [userInfo, setUserInfo] = useState(null);
 
-  return (
-    <>
-      <ChatApp/>
-    </>
-  )
-}
+    const handleJoin = useCallback(({ username, room }) => {
+        console.log('hello there')
+        setUserInfo({ username, room });
+    },[userInfo]);
 
-export default App
+    return userInfo ? (
+        <ChatApp username={userInfo.username} room={userInfo.room} />
+    ) : (
+        <JoinForm onJoin={handleJoin} />
+    );
+};
+
+export default App;
