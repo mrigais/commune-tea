@@ -17,8 +17,8 @@ A real-time web chat application built with **Node.js**, **Express**, **React**,
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/mrigais/chat-app.git
-cd chat-app
+git clone https://github.com/mrigais/commune-tea.git
+cd commune-tea
 2. Install Dependencies
 Backend:
 
@@ -53,7 +53,7 @@ npm run dev  # Or `npm start` if using CRA
 bash
 Copy
 Edit
-chat-app/
+commune-tea/
 ├── client/     # React frontend
 └── server/     # Node.js + Express backend with Socket.io
 
